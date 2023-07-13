@@ -1,3 +1,7 @@
+const APK_PATH = "C:\\Users\\abdur\\Downloads\\app-release.apk";
+const PLATFORM_VERSION = "12";
+const DEVICE_NAME = "Nexus 9 API 31";
+
 exports.config = {
   runner: "local",
   port: 4723,
@@ -9,9 +13,9 @@ exports.config = {
       // capabilities for local Appium web tests on an Android Emulator
       platformName: "Android",
       //   browserName: "chrome",
-      "appium:deviceName": "Nexus 9 API 31",
-      "appium:platformVersion": "12",
-      "appium:app": "C:\\Users\\abdur\\Downloads\\app-release.apk",
+      "appium:deviceName": DEVICE_NAME,
+      "appium:platformVersion": PLATFORM_VERSION,
+      "appium:app": APK_PATH,
       "appium:automationName": "UiAutomator2",
       "appium:noReset": true,
       "appium:autoLaunch": false,
